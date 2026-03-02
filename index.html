@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerkl&auml;rung - WartungsChecker</title>
+    <title>Datenschutzerkl&auml;rung / Privacy Policy - WartungsChecker</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -22,12 +22,20 @@
         .subtitle { color: #666; font-size: 0.9em; margin-bottom: 24px; }
         .footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid #ddd; color: #888; font-size: 0.85em; }
         a { color: #0066cc; }
-        table { width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 0.95em; }
-        th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; }
-        th { font-weight: 600; }
+        .lang-switch { text-align: right; margin-bottom: 16px; font-size: 0.9em; }
+        .lang-switch a { text-decoration: none; padding: 4px 10px; border-radius: 6px; }
+        .lang-switch a.active { background: #0066cc; color: #fff; }
+        .divider { margin: 40px 0; padding: 40px 0 0 0; border-top: 2px solid #ddd; }
     </style>
 </head>
 <body>
+    <div class="lang-switch">
+        <a href="#de" class="active">Deutsch</a>
+        <a href="#en">English</a>
+    </div>
+
+    <!-- DEUTSCH -->
+    <div id="de">
     <h1>Datenschutzerkl&auml;rung</h1>
     <p class="subtitle">WartungsChecker &ndash; iOS App</p>
 
@@ -96,6 +104,85 @@
     <div class="footer">
         <p>Stand: M&auml;rz 2026</p>
         <p>Kontakt: <a href="mailto:contact@nexuslaps.com">contact@nexuslaps.com</a></p>
+    </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="divider" id="en">
+    <div class="lang-switch">
+        <a href="#de">Deutsch</a>
+        <a href="#en" class="active">English</a>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">WartungsChecker &ndash; iOS App</p>
+
+    <h2>1. Data Controller</h2>
+    <p>Nexus Labs<br>Ren&eacute; Scheucher<br>Email: <a href="mailto:contact@nexuslaps.com">contact@nexuslaps.com</a></p>
+
+    <h2>2. What Data Is Collected?</h2>
+    <p>WartungsChecker manages maintenance schedules for household appliances, technical systems, and vehicles. All app data (device names, maintenance intervals, maintenance history, notes) is stored <strong>exclusively on your device</strong>. This data is not transmitted to us or any third parties and never leaves your device.</p>
+    <p>The app itself does <strong>not collect any personal data</strong> such as name, email address, location, or contacts. However, the third-party services described below may collect technical data.</p>
+
+    <h2>3. Third-Party Services</h2>
+    <p>The app uses the following third-party services:</p>
+
+    <h2>3a. Analytics &ndash; TelemetryDeck</h2>
+    <p>The app uses <strong>TelemetryDeck</strong>, a privacy-compliant analytics service based in the EU. TelemetryDeck collects only anonymized, aggregated usage statistics, for example:</p>
+    <ul>
+        <li>Which features are used (e.g., device added, maintenance completed)</li>
+        <li>General app usage patterns (e.g., app launches, screen views)</li>
+        <li>Anonymized purchase events (product ID and price for in-app purchases)</li>
+    </ul>
+    <p><strong>No personal data</strong> is collected, no IP addresses are stored, and no cross-device user tracking is performed. TelemetryDeck is GDPR-compliant and no consent banner is required.</p>
+    <p><strong>Legal basis:</strong> Legitimate interest (Art. 6(1)(f) GDPR) in improving the app.</p>
+    <p>More information: <a href="https://telemetrydeck.com/privacy/" target="_blank" rel="noopener">TelemetryDeck Privacy Policy</a></p>
+
+    <h2>3b. Advertising &ndash; Google AdMob</h2>
+    <p>The free version of the app displays advertisements served by <strong>Google AdMob</strong> (Google LLC, USA). The app does <strong>not</strong> request tracking permission (no ATT prompt) and does not access your device&rsquo;s advertising identifier (IDFA). Google AdMob may still collect and process the following data:</p>
+    <ul>
+        <li><strong>IP address</strong> (for country-level location)</li>
+        <li><strong>Device information</strong> (device type, operating system, screen size)</li>
+        <li><strong>Interaction data</strong> (ad impressions, clicks)</li>
+    </ul>
+    <p>Without IDFA access, Google primarily delivers <strong>contextual advertising</strong>. The collected data may be shared with advertising networks and Google partners.</p>
+    <p><strong>Disable advertising:</strong> By upgrading to the Pro version or purchasing the &ldquo;Remove Ads&rdquo; option, all advertising in the app is <strong>permanently disabled</strong> and Google AdMob will no longer collect data.</p>
+    <p><strong>Legal basis:</strong> Consent (Art. 6(1)(a) GDPR) or legitimate interest (Art. 6(1)(f) GDPR) in funding the free version of the app.</p>
+    <p>More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> | <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google Partner Information</a></p>
+
+    <h2>4. Notifications</h2>
+    <p>The app can send local push notifications to remind you of upcoming maintenance. These notifications are generated and processed entirely on your device &ndash; no data is sent to any server. You can revoke notification permission at any time in iOS Settings.</p>
+
+    <h2>5. In-App Purchases &amp; Subscriptions</h2>
+    <p>The app offers optional in-app purchases and subscriptions. All payment processing is handled exclusively by Apple&rsquo;s App Store. We have no access to your payment information. Apple processes this data in accordance with the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>.</p>
+
+    <h2>6. Data Storage &amp; Deletion</h2>
+    <p>All app data is stored locally on your device. Uninstalling the app will completely and irreversibly delete all local data.</p>
+    <p>Data collected by third parties (TelemetryDeck, Google AdMob) is stored and deleted in accordance with their respective privacy policies. TelemetryDeck stores anonymized data for a maximum of 24 months.</p>
+
+    <h2>7. Your Rights (GDPR)</h2>
+    <p>As a user in the European Union, you have the following rights:</p>
+    <ul>
+        <li><strong>Access</strong> (Art. 15 GDPR): You may request information about your processed data.</li>
+        <li><strong>Rectification</strong> (Art. 16 GDPR): You may request correction of inaccurate data.</li>
+        <li><strong>Erasure</strong> (Art. 17 GDPR): You may request deletion of your data.</li>
+        <li><strong>Restriction</strong> (Art. 18 GDPR): You may request restriction of processing.</li>
+        <li><strong>Data portability</strong> (Art. 20 GDPR): You may request your data in a portable format.</li>
+        <li><strong>Objection</strong> (Art. 21 GDPR): You may object to the processing of your data.</li>
+        <li><strong>Complaint</strong>: You have the right to file a complaint with a data protection authority.</li>
+    </ul>
+    <p>Since all app data is stored locally on your device, you have full control over your data directly in the app at all times. For inquiries about third-party data, please contact us by email.</p>
+
+    <h2>8. Children &amp; Minors</h2>
+    <p>The app is suitable for all age groups (App Store rating 4+). We do not collect any personal data ourselves. The free version displays advertising via Google AdMob, which may process device data (see section 3b). For minors under 14 years of age (pursuant to the Austrian Data Protection Act, &sect; 4(4) DSG), we recommend parental consent.</p>
+
+    <h2>9. Changes</h2>
+    <p>We reserve the right to update this privacy policy as needed. The current version is always available at this URL.</p>
+
+    <div class="footer">
+        <p>Last updated: March 2026</p>
+        <p>Contact: <a href="mailto:contact@nexuslaps.com">contact@nexuslaps.com</a></p>
+    </div>
     </div>
 </body>
 </html>
