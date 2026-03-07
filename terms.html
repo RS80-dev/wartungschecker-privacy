@@ -8,27 +8,35 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 700px;
+            line-height: 1.7;
+            color: #1d1d1f;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 24px 16px;
+            padding: 32px 20px;
             background: #fafafa;
         }
-        h1 { font-size: 1.6em; margin-bottom: 8px; }
-        h2 { font-size: 1.15em; margin-top: 24px; margin-bottom: 8px; }
-        p, ul { margin-bottom: 12px; }
-        ul { padding-left: 20px; }
-        .subtitle { color: #666; font-size: 0.9em; margin-bottom: 24px; }
-        .footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid #ddd; color: #888; font-size: 0.85em; }
-        a { color: #0066cc; }
-        table { width: 100%; border-collapse: collapse; margin: 8px 0 12px 0; font-size: 0.95em; }
-        th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; }
+        h1 { font-size: 1.7em; margin-bottom: 6px; color: #111; }
+        h2 { font-size: 1.15em; margin-top: 28px; margin-bottom: 10px; color: #222; }
+        p, ul { margin-bottom: 14px; }
+        ul { padding-left: 22px; }
+        li { margin-bottom: 4px; }
+        .subtitle { color: #666; font-size: 0.9em; margin-bottom: 4px; }
+        .effective { color: #888; font-size: 0.85em; margin-bottom: 28px; }
+        .footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid #ddd; color: #888; font-size: 0.85em; }
+        .footer p { margin-bottom: 4px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0 14px 0; font-size: 0.95em; }
+        th, td { text-align: left; padding: 10px; border-bottom: 1px solid #eee; }
         th { font-weight: 600; background: #f5f5f5; }
-        .lang-switch { text-align: right; margin-bottom: 16px; font-size: 0.9em; }
-        .lang-switch a { text-decoration: none; padding: 4px 10px; border-radius: 6px; }
+        .lang-switch { text-align: right; margin-bottom: 20px; font-size: 0.9em; }
+        .lang-switch a { text-decoration: none; padding: 5px 12px; border-radius: 6px; color: #555; }
         .lang-switch a.active { background: #0066cc; color: #fff; }
-        .divider { margin: 40px 0; padding: 40px 0 0 0; border-top: 2px solid #ddd; }
+        .lang-switch a:hover:not(.active) { background: #e8e8e8; }
+        .divider { margin: 48px 0; padding: 48px 0 0 0; border-top: 2px solid #ddd; }
+        .highlight { background: #f0f4ff; border-left: 3px solid #0066cc; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; }
+        .highlight p { margin-bottom: 0; }
+        strong { color: #111; }
     </style>
 </head>
 <body>
@@ -37,13 +45,16 @@
         <a href="#en">English</a>
     </div>
 
-    <!-- DEUTSCH -->
+    <!-- ==================== DEUTSCH ==================== -->
     <div id="de">
     <h1>Nutzungsbedingungen</h1>
     <p class="subtitle">WartungsChecker &ndash; iOS App</p>
+    <p class="effective">Stand: M&auml;rz 2026 &middot; Version 2.1</p>
 
-    <h2>1. Geltungsbereich</h2>
-    <p>Diese Nutzungsbedingungen gelten f&uuml;r die Nutzung der App &bdquo;WartungsChecker&ldquo; (im Folgenden &bdquo;App&ldquo;), bereitgestellt von Nexus Labs, Ren&eacute; Scheucher (im Folgenden &bdquo;Anbieter&ldquo;). Mit der Nutzung der App erkl&auml;rst du dich mit diesen Bedingungen einverstanden. Zus&auml;tzlich gelten die Nutzungsbedingungen von Apple f&uuml;r den App Store (<a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services</a>).</p>
+    <h2>1. Geltungsbereich &amp; Zustimmung</h2>
+    <p>Diese Nutzungsbedingungen (&bdquo;Bedingungen&ldquo;) gelten f&uuml;r die Nutzung der App &bdquo;WartungsChecker&ldquo; (im Folgenden &bdquo;App&ldquo;), bereitgestellt von Nexus RS, Ren&eacute; Scheucher (im Folgenden &bdquo;Anbieter&ldquo;).</p>
+    <p>Mit dem Herunterladen, Installieren oder Nutzen der App erkl&auml;rst du dich mit diesen Bedingungen einverstanden. Wenn du mit den Bedingungen nicht einverstanden bist, darfst du die App nicht nutzen.</p>
+    <p>Zus&auml;tzlich gelten die Nutzungsbedingungen von Apple f&uuml;r den App Store (<a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services</a>). Im Falle eines Widerspruchs gehen die Apple-Bedingungen vor.</p>
 
     <h2>2. Leistungsbeschreibung</h2>
     <p>Die App dient zur Verwaltung und Erinnerung von Wartungsterminen f&uuml;r Haushaltsger&auml;te, technische Anlagen und Fahrzeuge. Die Kernfunktionen umfassen:</p>
@@ -53,81 +64,132 @@
         <li>Wartungshistorie mit Notizen</li>
         <li>Vorkonfigurierte Vorlagen in 8 Kategorien (Heizung, Wasser, Elektro, K&uuml;che, Bad, Garten, Sicherheit, Fahrzeug)</li>
     </ul>
+    <p>Die App stellt eine <strong>Organisationshilfe</strong> dar und ersetzt keine professionelle Wartungsberatung, Herstellervorgaben oder gesetzliche Pr&uuml;fpflichten.</p>
 
     <h2>3. Kostenlose Nutzung</h2>
     <p>Die kostenlose Version erlaubt die Verwaltung von bis zu <strong>3 Ger&auml;ten</strong>. In der kostenlosen Version werden Werbeanzeigen &uuml;ber Google AdMob angezeigt. Die Nutzung der kostenlosen Version ist zeitlich unbegrenzt.</p>
 
     <h2>4. In-App-K&auml;ufe &amp; Abonnements</h2>
     <p>Die App bietet folgende optionale Kaufoptionen f&uuml;r die Pro-Version an:</p>
-
     <table>
-        <tr>
-            <th>Produkt</th>
-            <th>Art</th>
-            <th>Laufzeit</th>
-        </tr>
-        <tr>
-            <td>Pro Monatlich</td>
-            <td>Abonnement (auto-renewing)</td>
-            <td>1 Monat</td>
-        </tr>
-        <tr>
-            <td>Pro J&auml;hrlich</td>
-            <td>Abonnement (auto-renewing)</td>
-            <td>1 Jahr</td>
-        </tr>
-        <tr>
-            <td>Pro Lebenslang</td>
-            <td>Einmalkauf</td>
-            <td>Unbegrenzt</td>
-        </tr>
+        <tr><th>Produkt</th><th>Art</th><th>Laufzeit</th></tr>
+        <tr><td>Pro Monatlich</td><td>Abonnement (auto-renewing)</td><td>1 Monat</td></tr>
+        <tr><td>Pro J&auml;hrlich</td><td>Abonnement (auto-renewing)</td><td>1 Jahr</td></tr>
+        <tr><td>Pro Lebenslang</td><td>Einmalkauf</td><td>Unbegrenzt</td></tr>
     </table>
-
     <p>Die aktuellen Preise werden im App Store und in der App (vor dem Kauf) angezeigt und k&ouml;nnen je nach Land und W&auml;hrung variieren.</p>
-
     <p><strong>Pro-Version beinhaltet:</strong> Unbegrenzte Ger&auml;te und keine Werbung.</p>
-
     <p><strong>Abonnement-Bedingungen:</strong></p>
     <ul>
         <li>Die Zahlung wird &uuml;ber dein Apple-ID-Konto abgewickelt.</li>
         <li>Abonnements verl&auml;ngern sich <strong>automatisch</strong>, sofern sie nicht mindestens 24 Stunden vor Ablauf der aktuellen Laufzeit gek&uuml;ndigt werden.</li>
         <li>Der Verl&auml;ngerungsbetrag wird innerhalb von 24 Stunden vor Ablauf der aktuellen Laufzeit abgebucht.</li>
         <li>Die Verwaltung und K&uuml;ndigung von Abonnements erfolgt &uuml;ber die <strong>Einstellungen deines Apple-ID-Kontos</strong> (Einstellungen &rarr; [Dein Name] &rarr; Abonnements).</li>
+        <li>Kostenlose Testphasen (sofern angeboten) werden bei Nichtk&uuml;ndigung automatisch in ein kostenpflichtiges Abonnement umgewandelt.</li>
+    </ul>
+    <p><strong>Erstattungen:</strong> Alle K&auml;ufe werden &uuml;ber Apple abgewickelt. Erstattungsanfragen sind an Apple zu richten: <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+
+    <h2>5. Nutzerverantwortung</h2>
+    <p>Du bist verantwortlich f&uuml;r:</p>
+    <ul>
+        <li>Die ordnungsgem&auml;&szlig;e Nutzung der App gem&auml;&szlig; diesen Bedingungen</li>
+        <li>Die Richtigkeit der eingegebenen Daten (Ger&auml;tenamen, Wartungsintervalle etc.)</li>
+        <li>Die tats&auml;chliche Durchf&uuml;hrung von Wartungsarbeiten &ndash; die App erinnert lediglich</li>
+        <li>Die Sicherung deiner lokalen Daten (z.&nbsp;B. &uuml;ber iCloud-Ger&auml;tebackup)</li>
+    </ul>
+    <p>Du darfst die App nicht f&uuml;r rechtswidrige Zwecke nutzen oder in einer Weise verwenden, die die App oder ihre Infrastruktur beeintr&auml;chtigt.</p>
+
+    <h2>6. Verf&uuml;gbarkeit &amp; Updates</h2>
+    <p>Der Anbieter bem&uuml;ht sich um eine hohe Verf&uuml;gbarkeit der App. Da alle Daten lokal gespeichert werden, ist die App auch <strong>ohne Internetverbindung</strong> nutzbar. F&uuml;r In-App-K&auml;ufe und Werbeanzeigen ist eine Internetverbindung erforderlich.</p>
+    <p>Der Anbieter kann die App jederzeit aktualisieren, verbessern oder Funktionen &auml;ndern. Es besteht kein Anspruch auf bestimmte Funktionen, ununterbrochene Verf&uuml;gbarkeit oder Fortf&uuml;hrung der App.</p>
+
+    <h2>7. Geistiges Eigentum</h2>
+    <p>Alle Rechte an der App, einschlie&szlig;lich Design, Code, Texte, Grafiken, Logos und App-Icon, liegen beim Anbieter oder seinen Lizenzgebern. Die App wird <strong>lizenziert, nicht verkauft</strong>.</p>
+    <p>Die Nutzung ist ausschlie&szlig;lich f&uuml;r den pers&ouml;nlichen, nicht-kommerziellen Gebrauch gestattet. Insbesondere ist es untersagt:</p>
+    <ul>
+        <li>Die App zu kopieren, zu modifizieren, zu dekompilieren oder zu reverse-engineeren</li>
+        <li>Die App oder Teile davon weiterzuverbreiten, zu vermieten oder unterzulizenzieren</li>
+        <li>Markenzeichen, Logos oder urheberrechtlich gesch&uuml;tzte Inhalte der App zu verwenden</li>
     </ul>
 
-    <h2>5. Verf&uuml;gbarkeit</h2>
-    <p>Der Anbieter bem&uuml;ht sich um eine hohe Verf&uuml;gbarkeit der App. Da alle Daten lokal gespeichert werden, ist die App auch ohne Internetverbindung nutzbar. F&uuml;r In-App-K&auml;ufe und Werbeanzeigen ist eine Internetverbindung erforderlich. Ein Anspruch auf ununterbrochene Verf&uuml;gbarkeit besteht nicht.</p>
+    <h2>8. Haftungsausschluss &amp; Gew&auml;hrleistung</h2>
+    <div class="highlight">
+        <p><strong>Wichtig:</strong> Die App stellt Wartungserinnerungen als Hilfestellung bereit. Sie ersetzt weder professionelle Wartungsberatung noch Herstellervorgaben.</p>
+    </div>
+    <p>Die App wird <strong>&bdquo;wie besehen&ldquo; (as is)</strong> und <strong>&bdquo;wie verf&uuml;gbar&ldquo; (as available)</strong> bereitgestellt. Der Anbieter &uuml;bernimmt keine Gew&auml;hrleistung f&uuml;r:</p>
+    <ul>
+        <li>Die Richtigkeit, Vollst&auml;ndigkeit oder Aktualit&auml;t der empfohlenen Wartungsintervalle in den Vorlagen</li>
+        <li>Die ununterbrochene, fehlerfreie oder sichere Verf&uuml;gbarkeit der App</li>
+        <li>Die Eignung der App f&uuml;r einen bestimmten Zweck</li>
+        <li>Die rechtzeitige Zustellung von Benachrichtigungen (abh&auml;ngig von iOS-Systemeinstellungen)</li>
+    </ul>
+    <p>Der Nutzer ist <strong>selbst verantwortlich</strong> f&uuml;r die ordnungsgem&auml;&szlig;e Wartung seiner Ger&auml;te. Der Anbieter haftet nicht f&uuml;r Sch&auml;den, die durch unterlassene oder versp&auml;tete Wartung entstehen.</p>
 
-    <h2>6. Geistiges Eigentum</h2>
-    <p>Alle Rechte an der App, einschlie&szlig;lich Design, Code, Texte, Grafiken und Logos, liegen beim Anbieter. Die App wird lizenziert, nicht verkauft. Die Nutzung ist ausschlie&szlig;lich f&uuml;r den pers&ouml;nlichen, nicht-kommerziellen Gebrauch gestattet.</p>
+    <h2>9. Haftungsbeschr&auml;nkung</h2>
+    <p>Die Haftung des Anbieters ist auf <strong>Vorsatz und grobe Fahrl&auml;ssigkeit</strong> beschr&auml;nkt. Die Haftung f&uuml;r leichte Fahrl&auml;ssigkeit ist &ndash; soweit gesetzlich zul&auml;ssig &ndash; ausgeschlossen.</p>
+    <p>In keinem Fall haftet der Anbieter f&uuml;r:</p>
+    <ul>
+        <li>Indirekte Sch&auml;den, Folgesch&auml;den oder entgangenen Gewinn</li>
+        <li>Datenverlust (alle Daten liegen lokal auf deinem Ger&auml;t)</li>
+        <li>Sch&auml;den, die durch Drittanbieter-Dienste (Google AdMob, Apple) verursacht werden</li>
+        <li>Sch&auml;den infolge h&ouml;herer Gewalt, technischer St&ouml;rungen oder Handlungen Dritter</li>
+    </ul>
+    <p>Die maximale Gesamthaftung des Anbieters ist auf den Betrag beschr&auml;nkt, den du in den letzten 12 Monaten f&uuml;r die App bezahlt hast.</p>
+    <p><strong>Hinweis f&uuml;r Verbraucher:</strong> Diese Haftungsbeschr&auml;nkung gilt nicht f&uuml;r Personensch&auml;den oder soweit zwingende gesetzliche Verbraucherschutzbestimmungen entgegenstehen.</p>
 
-    <h2>7. Haftungsausschluss</h2>
-    <p>Die App stellt Wartungserinnerungen als <strong>Hilfestellung</strong> bereit. Es wird keine Garantie f&uuml;r die Richtigkeit, Vollst&auml;ndigkeit oder Aktualit&auml;t der empfohlenen Wartungsintervalle &uuml;bernommen. Der Nutzer ist selbst f&uuml;r die ordnungsgem&auml;&szlig;e Wartung seiner Ger&auml;te verantwortlich.</p>
-    <p>Der Anbieter haftet nicht f&uuml;r Sch&auml;den, die durch unterlassene oder versp&auml;tete Wartung entstehen, auch wenn die App eine Erinnerung h&auml;tte senden sollen. Die Haftung ist auf Vorsatz und grobe Fahrl&auml;ssigkeit beschr&auml;nkt.</p>
+    <h2>10. Freistellung</h2>
+    <p>Du stellst den Anbieter von s&auml;mtlichen Anspr&uuml;chen Dritter frei, die aus deiner Nutzung der App unter Versto&szlig; gegen diese Bedingungen oder geltendes Recht resultieren, einschlie&szlig;lich angemessener Anwaltskosten. Diese Klausel gilt nicht, soweit du die Pflichtverletzung nicht zu vertreten hast.</p>
 
-    <h2>8. Datenspeicherung &amp; Datenschutz</h2>
-    <p>Alle Ger&auml;tedaten werden ausschlie&szlig;lich lokal auf deinem Ger&auml;t gespeichert. Es erfolgt keine &Uuml;bertragung personenbezogener Daten an Server des Anbieters. Details zur Datenverarbeitung durch Drittanbieter-Dienste findest du in unserer <a href="https://rs80-dev.github.io/wartungschecker-privacy/">Datenschutzerkl&auml;rung</a>.</p>
+    <h2>11. Datenspeicherung &amp; Datenschutz</h2>
+    <p>Alle Ger&auml;tedaten werden ausschlie&szlig;lich lokal auf deinem Ger&auml;t gespeichert. Es erfolgt keine &Uuml;bertragung personenbezogener Daten an Server des Anbieters. Details zur Datenverarbeitung durch Drittanbieter-Dienste findest du in unserer <a href="https://wartungschecker.nexusrs.com/privacy.html">Datenschutzerkl&auml;rung</a>.</p>
 
-    <h2>9. Altersfreigabe</h2>
-    <p>Die App ist f&uuml;r alle Altersgruppen geeignet (App Store Bewertung 4+). F&uuml;r In-App-K&auml;ufe und Abonnements gelten die Altersbestimmungen von Apple. Bei Minderj&auml;hrigen empfehlen wir die Nutzung unter Aufsicht eines Erziehungsberechtigten.</p>
+    <h2>12. Drittanbieter-Dienste</h2>
+    <p>Die App integriert Drittanbieter-Dienste (Google AdMob, TelemetryDeck, Apple StoreKit). F&uuml;r diese Dienste gelten die jeweiligen Nutzungsbedingungen und Datenschutzerkl&auml;rungen der Anbieter. Der Anbieter &uuml;bernimmt keine Haftung f&uuml;r diese Drittanbieter-Dienste.</p>
 
-    <h2>10. Anwendbares Recht &amp; Gerichtsstand</h2>
-    <p>Es gilt das Recht der Republik &Ouml;sterreich unter Ausschluss des UN-Kaufrechts. F&uuml;r Verbraucher gelten zus&auml;tzlich die zwingenden Verbraucherschutzbestimmungen des Aufenthaltsstaates.</p>
+    <h2>13. K&uuml;ndigung</h2>
+    <p>Du kannst die Nutzung der App jederzeit beenden, indem du die App deinstallierst. Aktive Abonnements m&uuml;ssen separat &uuml;ber deine Apple-ID-Einstellungen gek&uuml;ndigt werden.</p>
+    <p>Der Anbieter beh&auml;lt sich das Recht vor, den Zugang zur App bei schwerwiegenden Verst&ouml;&szlig;en gegen diese Bedingungen einzuschr&auml;nken oder zu beenden. Bereits erworbene Lizenzen (Lifetime) bleiben von einer K&uuml;ndigung unber&uuml;hrt.</p>
 
-    <h2>11. Salvatorische Klausel</h2>
+    <h2>14. Altersfreigabe</h2>
+    <p>Die App ist f&uuml;r alle Altersgruppen geeignet (App Store Bewertung 4+). F&uuml;r In-App-K&auml;ufe gelten die Altersbestimmungen von Apple. Bei Minderj&auml;hrigen empfehlen wir die Nutzung unter Aufsicht eines Erziehungsberechtigten.</p>
+
+    <h2>15. H&ouml;here Gewalt</h2>
+    <p>Der Anbieter haftet nicht f&uuml;r Verz&ouml;gerungen oder Nichtverf&uuml;gbarkeit der App aufgrund von Umst&auml;nden, die au&szlig;erhalb seiner zumutbaren Kontrolle liegen (z.&nbsp;B. Naturkatastrophen, Pandemien, Serverausf&auml;lle, &Auml;nderungen der App-Store-Richtlinien, staatliche Anordnungen).</p>
+
+    <h2>16. Anwendbares Recht &amp; Streitbeilegung</h2>
+    <p>Es gilt das Recht der <strong>Republik &Ouml;sterreich</strong> unter Ausschluss des UN-Kaufrechts (CISG) und der Verweisungsnormen des internationalen Privatrechts.</p>
+    <p>F&uuml;r Verbraucher gelten zus&auml;tzlich die <strong>zwingenden Verbraucherschutzbestimmungen</strong> des Aufenthaltsstaates, sofern diese g&uuml;nstiger sind.</p>
+    <p><strong>Au&szlig;ergerichtliche Streitbeilegung:</strong> Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>. Wir sind weder verpflichtet noch bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+    <h2>17. Zus&auml;tzliche Bestimmungen f&uuml;r Nutzer im Vereinigten K&ouml;nigreich</h2>
+    <p>Bist du im Vereinigten K&ouml;nigreich ans&auml;ssig, gelten zus&auml;tzlich die Bestimmungen des <strong>Consumer Rights Act 2015</strong>. Deine gesetzlichen Verbraucherrechte (statutory rights) bleiben von diesen Nutzungsbedingungen unber&uuml;hrt und k&ouml;nnen nicht ausgeschlossen oder eingeschr&auml;nkt werden.</p>
+    <p>Insbesondere hast du das Recht, dass digitale Inhalte von zufriedenstellender Qualit&auml;t sind, sich f&uuml;r den vorgesehenen Zweck eignen und der Beschreibung entsprechen. F&uuml;r Datenschutzrechte gem&auml;&szlig; UK GDPR verweisen wir auf unsere <a href="https://wartungschecker.nexusrs.com/privacy.html">Datenschutzerkl&auml;rung</a> (Abschnitt 9).</p>
+
+    <h2>18. Zus&auml;tzliche Bestimmungen f&uuml;r Nutzer in Australien</h2>
+    <p>Bist du in Australien ans&auml;ssig, gelten zus&auml;tzlich die Bestimmungen des <strong>Australian Consumer Law (ACL)</strong> gem&auml;&szlig; dem Competition and Consumer Act 2010. Die gesetzlichen Garantien (consumer guarantees) k&ouml;nnen nicht ausgeschlossen werden.</p>
+    <p>Digitale Produkte m&uuml;ssen von akzeptabler Qualit&auml;t sein, sich f&uuml;r den vorgesehenen Zweck eignen und der Beschreibung entsprechen. Die Haftungsbeschr&auml;nkung in Abschnitt 9 gilt nur insoweit, als dies nach australischem Recht zul&auml;ssig ist.</p>
+
+    <h2>19. Zus&auml;tzliche Bestimmungen f&uuml;r Nutzer in Kanada</h2>
+    <p>Bist du in Kanada ans&auml;ssig, k&ouml;nnen zus&auml;tzlich die <strong>Verbraucherschutzgesetze deiner Provinz</strong> gelten. Gesetzliche Gew&auml;hrleistungsrechte (implied warranties) bleiben von diesen Bedingungen unber&uuml;hrt. Die App unterliegt den Bestimmungen des Personal Information Protection and Electronic Documents Act (PIPEDA) &ndash; siehe unsere <a href="https://wartungschecker.nexusrs.com/privacy.html">Datenschutzerkl&auml;rung</a> (Abschnitt 11) f&uuml;r Details.</p>
+
+    <h2>20. Salvatorische Klausel</h2>
     <p>Sollte eine Bestimmung dieser Nutzungsbedingungen unwirksam sein oder werden, bleiben die &uuml;brigen Bestimmungen davon unber&uuml;hrt. Die unwirksame Bestimmung wird durch eine wirksame ersetzt, die dem wirtschaftlichen Zweck am n&auml;chsten kommt.</p>
 
-    <h2>12. &Auml;nderungen</h2>
-    <p>Der Anbieter beh&auml;lt sich vor, diese Nutzungsbedingungen jederzeit zu &auml;ndern. Die aktuelle Version ist stets in der App und unter dieser URL einsehbar.</p>
+    <h2>21. Gesamtvereinbarung</h2>
+    <p>Diese Bedingungen stellen zusammen mit der <a href="https://wartungschecker.nexusrs.com/privacy.html">Datenschutzerkl&auml;rung</a> und den <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services Bedingungen</a> die gesamte Vereinbarung zwischen dir und dem Anbieter hinsichtlich der Nutzung der App dar.</p>
+
+    <h2>22. &Auml;nderungen</h2>
+    <p>Der Anbieter beh&auml;lt sich vor, diese Nutzungsbedingungen jederzeit zu &auml;ndern. Die aktuelle Version ist stets unter dieser URL einsehbar. Bei wesentlichen &Auml;nderungen informieren wir in der App. Die fortgesetzte Nutzung der App nach Ver&ouml;ffentlichung der &Auml;nderungen gilt als Zustimmung.</p>
 
     <div class="footer">
-        <p>Stand: M&auml;rz 2026</p>
-        <p>Anbieter: Nexus Labs &ndash; Ren&eacute; Scheucher</p>
-        <p>Kontakt: <a href="mailto:contact@nexuslaps.com">contact@nexuslaps.com</a></p>
+        <p>Stand: M&auml;rz 2026 &middot; Version 2.1</p>
+        <p>Anbieter: Nexus RS &ndash; Ren&eacute; Scheucher</p>
+        <p>Kontakt: <a href="mailto:support@nexusrs.com">support@nexusrs.com</a></p>
+        <p>Web: <a href="https://nexusrs.com" target="_blank" rel="noopener">nexusrs.com</a></p>
     </div>
     </div>
 
-    <!-- ENGLISH -->
+    <!-- ==================== ENGLISH ==================== -->
     <div class="divider" id="en">
     <div class="lang-switch">
         <a href="#de">Deutsch</a>
@@ -136,9 +198,12 @@
 
     <h1>Terms of Use</h1>
     <p class="subtitle">WartungsChecker &ndash; iOS App</p>
+    <p class="effective">Effective: March 2026 &middot; Version 2.1</p>
 
-    <h2>1. Scope</h2>
-    <p>These Terms of Use apply to the use of the app &ldquo;WartungsChecker&rdquo; (hereinafter &ldquo;App&rdquo;), provided by Nexus Labs, Ren&eacute; Scheucher (hereinafter &ldquo;Provider&rdquo;). By using the App, you agree to these terms. The Apple Media Services Terms and Conditions also apply (<a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services</a>).</p>
+    <h2>1. Scope &amp; Acceptance</h2>
+    <p>These Terms of Use (&ldquo;Terms&rdquo;) apply to the use of the app &ldquo;WartungsChecker&rdquo; (hereinafter &ldquo;App&rdquo;), provided by Nexus RS, Ren&eacute; Scheucher (hereinafter &ldquo;Provider&rdquo;).</p>
+    <p>By downloading, installing, or using the App, you agree to these Terms. If you do not agree to these Terms, you may not use the App.</p>
+    <p>The Apple Media Services Terms and Conditions also apply (<a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services</a>). In case of conflict, Apple&rsquo;s terms shall prevail.</p>
 
     <h2>2. Service Description</h2>
     <p>The App manages and provides reminders for maintenance schedules of household appliances, technical systems, and vehicles. Core features include:</p>
@@ -148,77 +213,128 @@
         <li>Maintenance history with notes</li>
         <li>Pre-configured templates in 8 categories (Heating, Water, Electrical, Kitchen, Bathroom, Garden, Safety, Vehicle)</li>
     </ul>
+    <p>The App is an <strong>organizational tool</strong> and does not replace professional maintenance advice, manufacturer specifications, or statutory inspection obligations.</p>
 
     <h2>3. Free Usage</h2>
     <p>The free version allows management of up to <strong>3 devices</strong>. The free version displays advertisements via Google AdMob. Free usage is unlimited in duration.</p>
 
     <h2>4. In-App Purchases &amp; Subscriptions</h2>
     <p>The App offers the following optional purchase options for the Pro version:</p>
-
     <table>
-        <tr>
-            <th>Product</th>
-            <th>Type</th>
-            <th>Duration</th>
-        </tr>
-        <tr>
-            <td>Pro Monthly</td>
-            <td>Subscription (auto-renewing)</td>
-            <td>1 month</td>
-        </tr>
-        <tr>
-            <td>Pro Yearly</td>
-            <td>Subscription (auto-renewing)</td>
-            <td>1 year</td>
-        </tr>
-        <tr>
-            <td>Pro Lifetime</td>
-            <td>One-time purchase</td>
-            <td>Unlimited</td>
-        </tr>
+        <tr><th>Product</th><th>Type</th><th>Duration</th></tr>
+        <tr><td>Pro Monthly</td><td>Subscription (auto-renewing)</td><td>1 month</td></tr>
+        <tr><td>Pro Yearly</td><td>Subscription (auto-renewing)</td><td>1 year</td></tr>
+        <tr><td>Pro Lifetime</td><td>One-time purchase</td><td>Unlimited</td></tr>
     </table>
-
     <p>Current prices are displayed in the App Store and within the App (before purchase) and may vary by country and currency.</p>
-
     <p><strong>Pro version includes:</strong> Unlimited devices and no advertisements.</p>
-
     <p><strong>Subscription terms:</strong></p>
     <ul>
         <li>Payment is processed through your Apple ID account.</li>
         <li>Subscriptions <strong>renew automatically</strong> unless cancelled at least 24 hours before the end of the current period.</li>
         <li>The renewal amount is charged within 24 hours before the end of the current period.</li>
         <li>Subscriptions are managed and cancelled through your <strong>Apple ID account settings</strong> (Settings &rarr; [Your Name] &rarr; Subscriptions).</li>
+        <li>Free trials (if offered) automatically convert to a paid subscription unless cancelled.</li>
+    </ul>
+    <p><strong>Refunds:</strong> All purchases are processed through Apple. Refund requests should be directed to Apple: <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+
+    <h2>5. User Responsibilities</h2>
+    <p>You are responsible for:</p>
+    <ul>
+        <li>Proper use of the App in accordance with these Terms</li>
+        <li>The accuracy of entered data (device names, maintenance intervals, etc.)</li>
+        <li>Actually performing maintenance work &ndash; the App only provides reminders</li>
+        <li>Backing up your local data (e.g., via iCloud device backup)</li>
+    </ul>
+    <p>You may not use the App for unlawful purposes or in any manner that impairs the App or its infrastructure.</p>
+
+    <h2>6. Availability &amp; Updates</h2>
+    <p>The Provider strives for high availability of the App. Since all data is stored locally, the App can be used <strong>without an internet connection</strong>. An internet connection is required for in-app purchases and advertisements.</p>
+    <p>The Provider may update, improve, or modify features at any time. There is no entitlement to specific features, uninterrupted availability, or continued operation of the App.</p>
+
+    <h2>7. Intellectual Property</h2>
+    <p>All rights to the App, including design, code, text, graphics, logos, and app icon, belong to the Provider or its licensors. The App is <strong>licensed, not sold</strong>.</p>
+    <p>Use is permitted exclusively for personal, non-commercial purposes. In particular, it is prohibited to:</p>
+    <ul>
+        <li>Copy, modify, decompile, or reverse-engineer the App</li>
+        <li>Redistribute, rent, or sublicense the App or parts thereof</li>
+        <li>Use trademarks, logos, or copyrighted content from the App</li>
     </ul>
 
-    <h2>5. Availability</h2>
-    <p>The Provider strives for high availability of the App. Since all data is stored locally, the App can be used without an internet connection. An internet connection is required for in-app purchases and advertisements. There is no guarantee of uninterrupted availability.</p>
+    <h2>8. Disclaimer of Warranty</h2>
+    <div class="highlight">
+        <p><strong>Important:</strong> The App provides maintenance reminders as a convenience tool. It does not replace professional maintenance advice or manufacturer specifications.</p>
+    </div>
+    <p>The App is provided <strong>&ldquo;as is&rdquo;</strong> and <strong>&ldquo;as available.&rdquo;</strong> The Provider makes no warranties regarding:</p>
+    <ul>
+        <li>The accuracy, completeness, or timeliness of recommended maintenance intervals in templates</li>
+        <li>Uninterrupted, error-free, or secure availability of the App</li>
+        <li>Fitness of the App for a particular purpose</li>
+        <li>Timely delivery of notifications (dependent on iOS system settings)</li>
+    </ul>
+    <p>The user is <strong>solely responsible</strong> for the proper maintenance of their devices. The Provider is not liable for damages resulting from missed or delayed maintenance.</p>
 
-    <h2>6. Intellectual Property</h2>
-    <p>All rights to the App, including design, code, text, graphics, and logos, belong to the Provider. The App is licensed, not sold. Use is permitted exclusively for personal, non-commercial purposes.</p>
+    <h2>9. Limitation of Liability</h2>
+    <p>The Provider&rsquo;s liability is limited to <strong>intentional misconduct and gross negligence</strong>. Liability for slight negligence is &ndash; to the extent permitted by law &ndash; excluded.</p>
+    <p>In no event shall the Provider be liable for:</p>
+    <ul>
+        <li>Indirect, incidental, or consequential damages, or lost profits</li>
+        <li>Data loss (all data is stored locally on your device)</li>
+        <li>Damages caused by third-party services (Google AdMob, Apple)</li>
+        <li>Damages resulting from force majeure, technical failures, or acts of third parties</li>
+    </ul>
+    <p>The Provider&rsquo;s maximum aggregate liability is limited to the amount you have paid for the App in the preceding 12 months.</p>
+    <p><strong>Consumer notice:</strong> This limitation of liability does not apply to personal injury or to the extent that mandatory consumer protection laws provide otherwise.</p>
 
-    <h2>7. Disclaimer</h2>
-    <p>The App provides maintenance reminders as a <strong>convenience tool</strong>. No guarantee is made regarding the accuracy, completeness, or timeliness of recommended maintenance intervals. The user is solely responsible for the proper maintenance of their devices.</p>
-    <p>The Provider is not liable for damages resulting from missed or delayed maintenance, even if the App should have sent a reminder. Liability is limited to intentional misconduct and gross negligence.</p>
+    <h2>10. Indemnification</h2>
+    <p>You agree to indemnify and hold the Provider harmless from any third-party claims arising from your use of the App in violation of these Terms or applicable law, including reasonable attorney&rsquo;s fees. This clause does not apply to the extent you are not responsible for the breach.</p>
 
-    <h2>8. Data Storage &amp; Privacy</h2>
-    <p>All device data is stored exclusively on your device. No personal data is transmitted to the Provider&rsquo;s servers. Details on data processing by third-party services can be found in our <a href="https://rs80-dev.github.io/wartungschecker-privacy/">Privacy Policy</a>.</p>
+    <h2>11. Data Storage &amp; Privacy</h2>
+    <p>All device data is stored exclusively on your device. No personal data is transmitted to the Provider&rsquo;s servers. Details on data processing by third-party services can be found in our <a href="https://wartungschecker.nexusrs.com/privacy.html">Privacy Policy</a>.</p>
 
-    <h2>9. Age Rating</h2>
+    <h2>12. Third-Party Services</h2>
+    <p>The App integrates third-party services (Google AdMob, TelemetryDeck, Apple StoreKit). These services are subject to their respective terms of service and privacy policies. The Provider assumes no liability for these third-party services.</p>
+
+    <h2>13. Termination</h2>
+    <p>You may terminate your use of the App at any time by uninstalling it. Active subscriptions must be cancelled separately through your Apple ID settings.</p>
+    <p>The Provider reserves the right to restrict or terminate access to the App in case of material violations of these Terms. Previously acquired licenses (Lifetime) remain unaffected by termination.</p>
+
+    <h2>14. Age Rating</h2>
     <p>The App is suitable for all age groups (App Store rating 4+). Apple&rsquo;s age restrictions apply to in-app purchases and subscriptions. We recommend that minors use the App under parental supervision.</p>
 
-    <h2>10. Governing Law &amp; Jurisdiction</h2>
-    <p>The laws of the Republic of Austria apply, excluding the UN Convention on Contracts for the International Sale of Goods. For consumers, the mandatory consumer protection provisions of their country of residence additionally apply.</p>
+    <h2>15. Force Majeure</h2>
+    <p>The Provider shall not be liable for delays or unavailability of the App due to circumstances beyond its reasonable control (e.g., natural disasters, pandemics, server outages, changes to App Store policies, government orders).</p>
 
-    <h2>11. Severability</h2>
-    <p>If any provision of these Terms of Use is or becomes invalid, the remaining provisions shall remain unaffected. The invalid provision shall be replaced by a valid provision that most closely reflects the economic purpose.</p>
+    <h2>16. Governing Law &amp; Dispute Resolution</h2>
+    <p>The laws of the <strong>Republic of Austria</strong> shall apply, excluding the UN Convention on Contracts for the International Sale of Goods (CISG) and conflict-of-law rules.</p>
+    <p>For consumers, the <strong>mandatory consumer protection provisions</strong> of their country of residence additionally apply where more favorable.</p>
+    <p><strong>Online dispute resolution:</strong> The European Commission provides an online dispute resolution (ODR) platform: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>. We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board.</p>
 
-    <h2>12. Changes</h2>
-    <p>The Provider reserves the right to modify these Terms of Use at any time. The current version is always available in the App and at this URL.</p>
+    <h2>17. Additional Terms for United Kingdom Residents</h2>
+    <p>If you are a resident of the United Kingdom, the <strong>Consumer Rights Act 2015</strong> additionally applies. Your statutory consumer rights remain unaffected by these Terms and cannot be excluded or limited.</p>
+    <p>In particular, you have the right to expect that digital content is of satisfactory quality, fit for purpose, and as described. For your data protection rights under the UK GDPR, please refer to our <a href="https://wartungschecker.nexusrs.com/privacy.html">Privacy Policy</a> (Section 9).</p>
+
+    <h2>18. Additional Terms for Australian Residents</h2>
+    <p>If you are an Australian resident, the <strong>Australian Consumer Law (ACL)</strong> under the Competition and Consumer Act 2010 additionally applies. Consumer guarantees under the ACL cannot be excluded.</p>
+    <p>Digital products must be of acceptable quality, fit for purpose, and match their description. The limitation of liability in Section 9 applies only to the extent permitted by Australian law.</p>
+
+    <h2>19. Additional Terms for Canadian Residents</h2>
+    <p>If you are a Canadian resident, the <strong>consumer protection laws of your province</strong> may additionally apply. Statutory implied warranties remain unaffected by these Terms. The App is subject to the Personal Information Protection and Electronic Documents Act (PIPEDA) &ndash; see our <a href="https://wartungschecker.nexusrs.com/privacy.html">Privacy Policy</a> (Section 11) for details.</p>
+
+    <h2>20. Severability</h2>
+    <p>If any provision of these Terms is or becomes invalid, the remaining provisions shall remain unaffected. The invalid provision shall be replaced by a valid provision that most closely reflects the economic purpose.</p>
+
+    <h2>21. Entire Agreement</h2>
+    <p>These Terms, together with the <a href="https://wartungschecker.nexusrs.com/privacy.html">Privacy Policy</a> and the <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services Terms</a>, constitute the entire agreement between you and the Provider regarding the use of the App.</p>
+
+    <h2>22. Changes</h2>
+    <p>The Provider reserves the right to modify these Terms at any time. The current version is always available at this URL. We will notify users within the App of material changes. Continued use of the App after publication of changes constitutes acceptance.</p>
 
     <div class="footer">
-        <p>Last updated: March 2026</p>
-        <p>Provider: Nexus Labs &ndash; Ren&eacute; Scheucher</p>
-        <p>Contact: <a href="mailto:contact@nexuslaps.com">contact@nexuslaps.com</a></p>
+        <p>Effective: March 2026 &middot; Version 2.1</p>
+        <p>Provider: Nexus RS &ndash; Ren&eacute; Scheucher</p>
+        <p>Contact: <a href="mailto:support@nexusrs.com">support@nexusrs.com</a></p>
+        <p>Web: <a href="https://nexusrs.com" target="_blank" rel="noopener">nexusrs.com</a></p>
     </div>
     </div>
 </body>
